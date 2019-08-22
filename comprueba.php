@@ -28,15 +28,15 @@
     //$registro = $resultado->fetch(PDO::FETCH_NUM);
     //echo $registro[0];
 
-    while ($registro = $resultado->fetch(PDO::FETCH_NUM))
+    while ($registro = $resultado->fetch(PDO::FETCH_ASSOC))
     {
 
-      if($password==$registro[0])
+      if($password==$registro["Clave"])
       {
          //echo "Hola<br />";
         header("location:cambio.php?user=" . $usuario);
       }
-      if(password_verify($password, $registro[0]))
+      if(password_verify($password, $registro["Clave"]) && $registro["Estatus"]=="Activo")
       {
 
         $cont++;
