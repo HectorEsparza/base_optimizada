@@ -1,0 +1,30 @@
+.principal{
+  /*background-color: #44EF0D;*/
+  background-color: #8BFC64;
+}
+.nulo{
+  /*background-color: #EF0D0D;*/
+  background-color: #EEA439;
+}
+.cancelada{
+  /*background-color: #EF0D0D;*/
+  background-color: #EE3939;
+}
+.modifica{
+  border-radius: 10px 10px 10px 10px;
+  color: #FC6464;
+  background: #F7FC64;
+}
+.ver
+{
+  border-radius: 10px 10px 10px 10px;
+  color: #6664FC;
+  background: #64FCEA;
+}
+th{
+  font-size: large;
+  text-align: center;
+}
+td{
+  text-align: center;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="" content="" />
+  <meta name="" content="" />
+  <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon" />
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <title>Inicio Sesión</title>
+  <script src="notaCredito/ajax/js/bootstrap.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 align='center'>Inicia Sesión</h1>
+    </div>
+  </header>
+  <section>
+    <div class="container">
+      <!--<table width='20%' height='30%' align='center' border=1>-->
+      <table class="table table-bordered table-condensed table-responsive">
+        <form action='comprueba.php' method='post'>
+           <tr>
+             <td colspan=2 align='center'><img src='imagenes/apa.jpg' class="img-responsive"></td>
+           </tr>
+           <tr>
+             <div class="form-group">
+               <th><label for="usuario">Usuario:</label></th>
+               <td><input class="form-control" id="usuario" type='text'name='usuario' required></td>
+             </div>
+           </tr>
+           <tr>
+             <div class="form-group">
+               <th><label for="contra">Contraseña:</label></th>
+               <td><input class="form-control" id="contra" type='password'name='contra' required></td>
+             </div>
+           </tr>
+           <tr>
+             <td align='center' colspan=2><input type='submit' name='inicio' value='Login' class="btn btn-primary"></td>
+           </tr>
+        </form>
+
+      </table>
+    </div>
+  </section>
+
+
+
+  <!--<script src="http://localhost:35729/livereload.js" charset="utf-8"></script>-->
+</body>
+</html>
