@@ -378,7 +378,13 @@ function mes_sae($fecha){
 function imp($can , $pre)
 {
  $imp2 = $can*$pre;
- return $imp2;
+ $imp2 = round($imp2 * 100) / 100;
+ if($imp2%1==0){
+   return $imp2 . ".00";
+ }
+ else{
+   return $imp2;
+ }
 }
 
 //calcula subtotal de cada producto, recibe descuento e importe
@@ -432,7 +438,12 @@ function iva($sub)
 {
   $x = $sub*.16;
   $y = round($x * 100) / 100;
-  return $y;
+  if($y%1==0){
+    return $y . ".00";
+  }
+  else{
+    return $y;
+  }
 }
 
 //Calcula el precio con iva incluido, recibe el precio
